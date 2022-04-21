@@ -19,6 +19,8 @@ class LoginResource extends JsonResource
             'id'          => $this->id,
             'name'        => $this->name,
             'phone'       => $this->phone,
+            'lat'=>$this->latitude,
+            'long'=>$this->longitude,
             'accessToken' => $this->createToken('LaravelSanctumAuth')->plainTextToken
         ];
     }
